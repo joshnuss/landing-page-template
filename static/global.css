@@ -1,8 +1,9 @@
 :root {
   --header-color: turquoise;
   --background-color: #f3f3f3;
+  --text-color: #333;
   --border-radius: 8px;
-  --accent-color: pink;
+  --accent-color: var(--header-color);
 }
 
 body {
@@ -10,7 +11,7 @@ body {
   font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-size: 14px;
   line-height: 1.5;
-  color: #333;
+  color: var(--text-color);
   background-color: var(--background-color);
 }
 

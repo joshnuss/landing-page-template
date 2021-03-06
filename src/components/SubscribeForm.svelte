@@ -20,7 +20,7 @@
     justify-content: center;
   }
   input, button {
-    font-size: 1rem;
+    font-size: 1.2rem;
     padding: 1rem 1rem;
   }
 
