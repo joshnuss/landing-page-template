@@ -4,6 +4,11 @@
   --text-color: #333;
   --border-radius: 8px;
   --accent-color: #111;
+  --shadow-color: #0001;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {

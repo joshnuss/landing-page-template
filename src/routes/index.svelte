@@ -1,5 +1,6 @@
 <script>
   import SubscribeForm from '@/components/SubscribeForm.svelte'
+  import Screen from '@/components/Screen.svelte'
 </script>
 
 <svelte:head>
@@ -10,7 +11,7 @@
   <header>
     <a class="logo" href="/">LOGO</a>
     <a href="#subscribe" class="subscribe">
-      <span>Subscribe</span>
+      <span>Sign up</span>
       <svg width=20 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
       </svg>
@@ -18,8 +19,13 @@
   </header>
 
   <section class="hero">
-    <h1>Best infrastructure for the web.</h1>
+    <h1>The best infrastructure for the web.</h1>
     <p>Don't waste time with the other guys solution. There's a <strong>better</strong> way.</p>
+
+    <div class="box">
+      <Screen title="index.html">
+      </Screen>
+    </div>
   </section>
 </div>
 
@@ -81,5 +87,10 @@
     letter-spacing: -1px;
     line-height: 1.9rem;
     color: #666;
+  }
+  .box {
+    margin-top: 40px;
+    margin-bottom: -80px;
+    width: calc(100vw - 4rem);
   }
 </style>

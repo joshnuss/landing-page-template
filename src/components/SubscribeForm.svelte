@@ -1,4 +1,4 @@
-<form>
+<form id="subscribe">
   <h2>Stay in the loop.</h2>
   <p>You'll receive a compelling offer.</p>
   <div class="fields">
@@ -12,7 +12,7 @@
     margin: 50px 0;
     border-radius: var(--border-radius);
   }
-  form:focus-within {
+  .fields:focus-within {
     outline: solid 1px red;
   }
   .fields {
@@ -34,6 +34,7 @@
   button {
     border-radius: 0px var(--border-radius) var(--border-radius) 0px;
     background-color: var(--accent-color);
+    border-color: black;
     color: var(--background-color);
   }
 </style>
