@@ -2,7 +2,7 @@
   export let title = null
 </script>
 
-<section class="terminal">
+<section class="screen">
   <div class="buttons">
     <svg xmlns="http://www.w3.org/2000/svg" width="54" height="14" viewBox="0 0 54 14">
       <g fill="none" fill-rule="evenodd" transform="translate(1 1)">
@@ -14,16 +14,14 @@
   </div>
 
 	<div class="bar">
-
     <div class="title">{#if title}{title}{/if}</div>
-
 	</div>
 
   <slot/>
 </section>
 
 <style>
-  .terminal {
+  .screen {
 		font-family: monospace;
 		font-size: 1.2rem;
     border: solid 1px #ccc;
@@ -36,7 +34,7 @@
     position: relative;
 	}
 
-	.terminal .bar {
+	.screen .bar {
     font-family: Inter;
 		margin-bottom: 1rem;
     display: flex;

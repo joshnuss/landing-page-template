@@ -1,6 +1,7 @@
 <script>
   import SubscribeForm from '@/components/SubscribeForm.svelte'
   import Screen from '@/components/Screen.svelte'
+  import Phone from '@/components/Phone.svelte'
 </script>
 
 <svelte:head>
@@ -25,6 +26,10 @@
     <div class="box">
       <Screen title="index.html">
       </Screen>
+      <div class="phone">
+        <Phone title="chrome">
+        </Phone>
+      </div>
     </div>
   </section>
 </div>
@@ -92,5 +97,12 @@
     margin-top: 40px;
     margin-bottom: -80px;
     width: calc(100vw - 4rem);
+    position: relative;
+  }
+  .phone {
+    position: absolute;
+    right: -20px;
+    top: 10px;
+    transform: scale(0.9);
   }
 </style>
