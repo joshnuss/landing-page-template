@@ -8,7 +8,7 @@
 
 <div class="top">
   <header>
-    <a href="/">LOGO</a>
+    <a class="logo" href="/">LOGO</a>
     <a href="#subscribe" class="subscribe">
       <span>Subscribe</span>
       <svg width=20 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -19,7 +19,7 @@
 
   <section class="hero">
     <h1>Best infrastructure for the web.</h1>
-    <p>When your're building a techonology product you need good stuff. Right?</p>
+    <p>Don't waste time with the other guys solution. There's a <strong>better</strong> way.</p>
   </section>
 </div>
 
@@ -29,11 +29,13 @@
 
 <style>
   .top {
-    background: var(--header-color);
+    background: var(--header-background);
+    background-size: cover;
+    background-position: bottom;
     width: 100%;
   }
   header {
-    padding: 1rem 1rem;
+    padding: 1rem 1.5rem;
     display: flex;
     place-items: center;
     justify-content: space-between;
@@ -62,15 +64,22 @@
     justify-content: center;
   }
 
+  .logo {
+    color: var(--background-color);
+  }
   .hero h1, .hero p {
     text-align: left;
   }
 
   h1 {
-    font-weight: 500;
-    font-size: 2.5rem;
+    color: var(--background-color);
+    font-weight: 700;
+    font-size: 3rem;
   }
   .hero p {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
+    letter-spacing: -1px;
+    line-height: 1.9rem;
+    color: #666;
   }
 </style>
