@@ -29,6 +29,7 @@
   input {
     border-radius: var(--border-radius) 0 0 var(--border-radius);
     border-right: none;
+    max-width: 200px;
   }
   button {
     border-radius: 0px var(--border-radius) var(--border-radius) 0px;
