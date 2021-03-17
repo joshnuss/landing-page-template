@@ -9,6 +9,9 @@
   --sub-heading-font-size: 1.2rem;
   --hero-padding: 1rem 1.5rem;
   --hero-screen-height: 200px;
+  --hero-phone-height: 200px;
+  --hero-phone-width: 100px;
+  --hero-phone-top: 10px;
 }
 
 @media screen and (min-width: 400px) {
@@ -17,6 +20,9 @@
     --sub-heading-font-size: 1.7rem;
     --hero-padding: 5rem 1.5rem;
     --hero-screen-height: 400px;
+    --hero-phone-height: 280px;
+    --hero-phone-width: 140px;
+    --hero-phone-top: 80px;
   }
 }
 

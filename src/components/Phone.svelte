@@ -1,8 +1,11 @@
 <script>
+  let classes = ''
+
+  export {classes as class}
   export let title
 </script>
 
-<section class="phone">
+<section class="phone {classes}">
   <div class="title">{title}</div>
   <slot/>
 

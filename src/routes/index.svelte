@@ -26,8 +26,8 @@
     <div class="box">
       <Screen title="index.html" class="screen">
       </Screen>
-      <div class="phone">
-        <Phone title="chrome">
+      <div class="phone-wrapper">
+        <Phone title="chrome" class="phone">
         </Phone>
       </div>
     </div>
@@ -104,7 +104,7 @@
     text-align: center;
   }
   main {
-    margin: 4rem 1rem 1rem;
+    margin: 4rem 0rem 1rem;
   }
 
   .logo {
@@ -131,11 +131,16 @@
     width: calc(100vw - 4rem);
     position: relative;
   }
-  .phone {
+  .phone-wrapper {
     position: absolute;
     right: -20px;
-    top: 10px;
+    top: var(--hero-phone-top);
     transform: scale(0.9);
+  }
+
+  :global(.phone) {
+    height: var(--hero-phone-height) !important;
+    width: var(--hero-phone-width) !important;
   }
 
   footer {
@@ -143,6 +148,7 @@
     gap: 10px;
     padding: 1rem 1rem;
     justify-content: center;
+    margin: 3rem 0 1rem;
   }
 
   .features {
@@ -172,7 +178,7 @@
 
   .features svg {
     color: #555;
-    width: 50px;
+    width: 30px;
     align-self: flex-start;
   }
 

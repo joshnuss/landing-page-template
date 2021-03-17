@@ -1,6 +1,6 @@
 <form id="subscribe">
   <h2>Stay in the loop</h2>
-  <p>The service will launch at $10/month. Folks on the beta list will receive a 25% discount.</p>
+  <p>The service will launch at $10/month. Everyone on the beta list will receive a 25% discount.</p>
   <div class="fields">
     <input type="email" name="email" placeholder="E-mail address" required/>
     <button>Subscribe</button>
@@ -9,7 +9,11 @@
 
 <style>
   form {
-    border-radius: var(--border-radius);
+    border-top: solid 3px var(--text-color);
+    padding-top: 36px;
+  }
+  h2, p {
+    margin: 1rem 2rem;
   }
   .fields:focus-within {
     outline: solid 1px red;
