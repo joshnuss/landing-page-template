@@ -1,5 +1,5 @@
 <form id="subscribe">
-  <h2>Stay in the loop</h2>
+  <h2>Beta access</h2>
   <p>The service will launch at $10/month. Everyone on the beta list will receive a 25% discount.</p>
   <div class="fields">
     <input type="email" name="email" placeholder="E-mail address" required/>
@@ -14,9 +14,6 @@
   }
   h2, p {
     margin: 1rem 2rem;
-  }
-  .fields:focus-within {
-    outline: solid 1px red;
   }
   .fields {
     display: flex;

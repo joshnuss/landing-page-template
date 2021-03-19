@@ -9,9 +9,11 @@
   --sub-heading-font-size: 1.2rem;
   --hero-padding: 1rem 1.5rem;
   --hero-screen-height: 200px;
+  --hero-screen-width: auto;
   --hero-phone-height: 200px;
   --hero-phone-width: 100px;
   --hero-phone-top: 10px;
+  --hero-box-padding: 0;
 }
 
 @media screen and (min-width: 400px) {
@@ -23,6 +25,29 @@
     --hero-phone-height: 280px;
     --hero-phone-width: 140px;
     --hero-phone-top: 80px;
+    --container-width: auto;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  :root {
+    --heading-font-size: 3.5rem;
+    --sub-heading-font-size: 2.2rem;
+    --hero-screen-height: 500px;
+    --hero-screen-width: 1000px;
+    --hero-phone-height: 400px;
+    --hero-phone-width: 220px;
+    --hero-phone-top: 120px;
+    --hero-box-padding: 4rem 0;
+    --main-margin: 4rem 0rem 1rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  :root {
+    --hero-padding: 6rem 0;
+    --container-width: 1000px;
+    --main-margin: 0px auto;
   }
 }
 

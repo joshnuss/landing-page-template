@@ -56,6 +56,26 @@
       <p>lorem ipsum</p>
     </div>
   </article>
+
+  <article>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 15.546c-.523 0-1.046.151-1.5.454a2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.701 2.701 0 00-1.5-.454M9 6v2m3-2v2m3-2v2M9 3h.01M12 3h.01M15 3h.01M21 21v-7a2 2 0 00-2-2H5a2 2 0 00-2 2v7h18zm-3-9v-2a2 2 0 00-2-2H8a2 2 0 00-2 2v2h12z" />
+    </svg>
+    <div class="content">
+      <h3>Feature #3</h3>
+      <p>lorem ipsum</p>
+    </div>
+  </article>
+
+  <article>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
+    </svg>
+    <div class="content">
+      <h3>Feature #4</h3>
+      <p>lorem ipsum</p>
+    </div>
+  </article>
 </section>
 
 <main>
@@ -83,6 +103,8 @@
     display: flex;
     place-items: center;
     justify-content: space-between;
+    width: var(--container-width);
+    margin: 0px auto;
   }
   header a.subscribe {
     display: flex;
@@ -102,9 +124,9 @@
     margin: 0 auto;
     box-sizing: border-box;
     text-align: center;
+    width: var(--container-width);
   }
   main {
-    margin: 4rem 0rem 1rem;
   }
 
   .logo {
@@ -128,8 +150,8 @@
   .box {
     margin-top: 40px;
     margin-bottom: -80px;
-    width: calc(100vw - 4rem);
     position: relative;
+    padding: var(--hero-box-padding);
   }
   .phone-wrapper {
     position: absolute;
@@ -155,7 +177,10 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    margin: 140px 1rem 1rem;
+    margin: var(--main-margin);
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: var(--container-width);
   }
 
   .features h2 {
@@ -183,6 +208,9 @@
   }
 
   :global(.hero .screen) {
-    min-height: var(--hero-screen-height);
+    height: var(--hero-screen-height);
+    width: var(--hero-screen-width);
+    text-align: left;
+    font-size: 1.5rem !important;
   }
 </style>
