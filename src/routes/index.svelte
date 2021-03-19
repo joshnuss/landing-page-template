@@ -2,6 +2,7 @@
   import SubscribeForm from '@/components/SubscribeForm.svelte'
   import { Screen } from 'svelte-preview-ui'
   import Phone from '@/components/Phone.svelte'
+  import CodeDemo from '@/components/CodeDemo.svelte'
 </script>
 
 <svelte:head>
@@ -25,6 +26,7 @@
 
     <div class="box">
       <Screen title="index.html" class="screen">
+        <CodeDemo/>
       </Screen>
       <div class="phone-wrapper">
         <Phone title="chrome" class="phone">
